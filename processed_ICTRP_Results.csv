@@ -1,0 +1,656 @@
+Export_date$Internal_Number$TrialID$Last_Refreshed_on$Public_title$Scientific_title$Primary_sponsor$Retrospective_flag$Date_registration3$Date_registration$Source_Register$web_address$Recruitment_Status$other_records$Inclusion_agemin$Inclusion_agemax$Inclusion_gender$Date_enrollement$Target_size$Study_type$Study_design$Phase$Countries$Contact_Firstname$Contact_Lastname$Contact_Address$Contact_Email$Contact_Tel$Contact_Affiliation$Inclusion_Criteria$Exclusion_Criteria$Condition$Intervention$Primary_outcome$Source_Support$Ethics_review_status$Ethics_review_approval_date$Ethics_review_contact_name$Ethics_review_contact_address$Ethics_review_contact_phone$Ethics_review_contact_email$results_url_link$Secondary_outcome$Acronym$Secondary_ID$Secondary_Sponsor$results_yes_no$results_date_completed$results_date_posted$Multiple_countries$sponsor_type (AI generated)$total_size (Processed)$medical_specialty (AI generated)$intervention_type (AI generated)$primary_outcome (AI generated)$has_united_kingdom$has_korea$has_republic_of$has_china$has_italy$has_netherlands$has_india$has_united_states$has_belgium$has_turkey$has_germany
+04/10/2025 15:38:13$11613902$"NCT04746001
+    "$"22 November 2021
+    "$"Artificial Intelligence in the Diagnosis of Orthopaedic Conditions, Particularly Bone Tumours and Infection
+    "$"Artificial Intelligence in the Diagnosis of Orthopaedic Conditions, Particularly Bone Tumours and Infection
+    "$"Robert Jones and Agnes Hunt Orthopaedic and District NHS Trust
+    "$"Yes
+    "$20210208$"08/02/2021
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/show/NCT04746001
+    "$"Recruiting
+    "$"No
+    "$"18 Years
+    "$"N/A
+    "$"All
+    "$"June 28, 2021
+    "$"100
+    "$"Observational
+    "$$$"United Kingdom
+    "$$$$$$$"<br>        Inclusion Criteria:<br><br>        Suspected infection of bone tumour and biopsy taken for analysis<br><br>        Exclusion Criteria:<br><br>        Patient doesn't consent<br>      
+    "$$"Bone Tumours;Bone Infection;Prosthetic Joint Infection;Prosthetic Infection
+    "$"Diagnostic Test: Genomic sequencing;Diagnostic Test: Histological examination
+    "$"Sequencing data and identification;Histological slides and identification
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$$"AIortho
+    "$"281854_47208_2021
+    "$"Keele University
+    "$$$$False$hospital$100$oncology: multiple tumor types$AI-based diagnostic test$operational outcome$True$False$False$False$False$False$False$False$False$False$False
+04/10/2025 15:38:13$14404076$"NCT06584890
+    "$"21 October 2024
+    "$"Capabilities ofArtificial Intelligence Models in Externation Decision of Patient Who Followed in Intensive Care Unit ()
+    "$"The Evaluation of the Effectiveness of General Artificial Intelligence Models in Extubation Decision-Making in the Intensive Care Unit
+    "$"Kanuni Sultan Suleyman Training and Research Hospital
+    "$"Yes
+    "$20240903$"03/09/2024
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT06584890
+    "$"Recruiting
+    "$"No
+    "$"18 Years
+    "$"N/A
+    "$"All
+    "$"September 15, 2024
+    "$"398
+    "$"Observational
+    "$$$"Turkey
+    "$" ; ; 
+    "$"Engin ihsan turan;engin ihsan turan, dr;yesim özay
+    "$$";enginihsan@hotmail.com;istanbuleah34@saglik.gov.tr
+    "$";+905382431114;+902124041500
+    "$"Health Science University Istanbul Kanuni Sultan Süleyman Education and Training Hospital;
+    "$"Inclusion Criteria:<br><br>  -  Patients aged 18 years or older.<br><br>  -  Patients currently admitted to the Intensive Care Unit (ICU) during the study<br>     -period.<br><br>  -  Patients with sufficient clinical data available in the hospital&#39;s information<br>     system, including demographic information, clinical indicators, and treatment<br>     history.<br><br>  -  Patients for whom a discharge decision (to a general ward or home) needs to be made<br>     during their ICU stay.<br><br>Exclusion Criteria:<br><br>  -  Patients younger than 18 years old. Patients with incomplete or insufficient<br>     clinical data in the hospital&#39;s information system, making it difficult to<br>     assess their condition accurately.<br><br>Patients who are in the ICU for palliative care or end-of-life care, where discharge to a<br>general ward or home is not anticipated.<br><br>Patients who have opted out of participating in the study or whose legal representatives<br>have declined participation.
+    "$$"Artificial Intelegence
+    "$"Other: decision
+    "$"accuracy
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"models comparison;utilzation
+    "$"ICU
+    "$"Externation of ICU
+    "$$$$$False$hospital$398$uncertain$likely entry error$operational outcome$False$False$False$False$False$False$False$False$False$True$False
+04/10/2025 15:38:13$14149080$"NCT05619614
+    "$"22 July 2024
+    "$"The Influence of Artificial Intelligence (AI )Assisted Polyp Detection (Discovery System) on Visual Gaze Patterns During Real-time Colonoscopy
+    "$"The Influence of Artificial Intelligence (AI) Assisted Polyp Detection (Discovery System) on Visual Gaze Patterns During Real-time Colonoscopy
+    "$"Radboud University Medical Center
+    "$"Yes
+    "$20221109$"09/11/2022
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT05619614
+    "$"Recruiting
+    "$"No
+    "$"N/A
+    "$"N/A
+    "$"All
+    "$"June 1, 2024
+    "$"50
+    "$"Observational
+    "$$$"Netherlands
+    "$" ; 
+    "$"Michiel HJ Maas, Drs.;Michiel HJ Maas, MSc
+    "$$"Michiel.maas@radboudumc.nl;Michiel.maas@Radboudumc.nl
+    "$"3629647175;629647175
+    "$$"Inclusion Criteria of patients:<br><br>  -  Referred for diagnostic, screening or surveillance colonoscopy<br><br>Exclusion Criteria of patients:<br><br>  -  Therapeutic procedure<br><br>  -  Boston Bowel Prep Score (BBPS) score of <6
+    "$$"Colonic Neoplasms
+    "$"Device: eye-tracking glasses
+    "$"Mean gaze time per area of influence
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$$"REVEAL
+    "$"2022-13870
+    "$"Utrecht University;Lund University
+    "$$$$False$university$50$oncology: gastrointestinal$AI-assisted medical procedure$operational outcome$False$False$False$False$False$True$False$False$False$False$False
+04/10/2025 15:38:13$7997743$"ChiCTR1900023109
+    "$"13 May 2019
+    "$"Study and Application of artificial Intelligence in diagnosis and treatment of Cardiovascular Diseases
+    "$"Study on artificial Intelligence in diagnosis and treatment of Cardiovascular Diseases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    "$"Jilin University Second Hospital
+    "$"No
+    "$20190511$"2019-05-11
+    "$"ChiCTR
+    "$"http://www.chictr.org.cn/showproj.aspx?proj=38764
+    "$"Not Recruiting
+    "$"No
+    "$"18
+    "$"80
+    "$"Both
+    "$"2019-05-05
+    "$"None:600;
+    "$"Observational study
+    "$"Sequential
+    "$"0
+    "$"China
+    "$"Chunli Song
+    "$$"218 Ziqiang Street, Nanguan District, Changchun, Jilin, China
+    "$"2632494613@qq.com
+    "$"=86 13596052383
+    "$"Jilin University Second Hospital
+    "$"Inclusion criteria: Previous hospitalized patients related to the purpose of this study.
+    "$"Exclusion criteria: Incomplete or omissions information case records.
+    "$"coronary disease
+    "$"None:Artificial intelligence automatic analysis data;
+    "$"Data analysis of coronary stenosis;
+    "$"No
+    "$"Approved
+    "$"09/01/2019
+    "$"aqlinghao@163.com
+    "$"Yang Wei
+    "$"+86 0431-81136334
+    "$"aqlinghao@163.com
+    "$$$$$$$$$False$hospital$600$cardiology/cardiovascular diseases$AI-based diagnostic test$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$13916542$"NCT06025279
+    "$"29 April 2024
+    "$"Musculoskeletal System Ultrasound Examination Data Collection Study for the Development of an Artificial Intelligence Software
+    "$"Data Collection Study to Develop an Artificial Intelligence-Based Ultrasound Guidance Software (Curious) for Musculoskeletal Examinations
+    "$"Smart Alfa Teknoloji San. ve Tic. A.S.
+    "$"No
+    "$20230829$"29/08/2023
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT06025279
+    "$"Not recruiting
+    "$"No
+    "$"18 Years
+    "$"N/A
+    "$"All
+    "$"August 3, 2023
+    "$"300
+    "$"Observational
+    "$$$"Turkey
+    "$$$$$$$"<br>        Inclusion Criteria:<br><br>          -  Volunteers over the age of 18<br><br>          -  Able to accept and sign the Informed Consent Form before participating in the study<br><br>        Exclusion Criteria:<br><br>          -  Volunteers below the age of 18<br><br>          -  Unwilling to accept or having psychiatric or neurological diseases to sign an Informed<br>             Consent Form before participating in the study<br><br>          -  Inability to lie flat<br><br>          -  Anatomical deformity in the area to be scanned<br>      
+    "$$"Ultrasound Imaging of Anatomical Structures;Musculoskeletal Diseases
+    "$"Other: Ultrasound Scan
+    "$"Collecting ultrasound data for artificial intelligence software that highlighted structures
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"Assessment of image quality
+    "$$"SMARTALPHA-CURIOUS-1000
+    "$"Ankara University
+    "$$$$False$private company$300$orthopedics$AI-assisted imaging$operational outcome$False$False$False$False$False$False$False$False$False$True$False
+04/10/2025 15:38:13$14125058$"NCT05956886
+    "$"15 July 2024
+    "$"Sleep Chatbot Intervention for Emerging Black/African American Adults
+    "$"Artificial Intelligence Sleep Chatbot in Emerging Black/African American Adults With Cardiometabolic Risk Factors: a Feasibility Study
+    "$"University of Delaware
+    "$"Yes
+    "$20230509$"09/05/2023
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT05956886
+    "$"Recruiting
+    "$"No
+    "$"18 Years
+    "$"25 Years
+    "$"All
+    "$"September 4, 2023
+    "$"30
+    "$"Interventional
+    "$"Allocation: N/A. Intervention model: Single Group Assignment. Primary purpose: Treatment. Masking: None (Open Label). 
+    "$"N/A
+    "$"United States
+    "$" ; ; 
+    "$"Xiaopeng Ji, PhD;Xiaopeng Ji, PhD;Xiaopeng Ji, PhD
+    "$$";jixiaop@udel.edu;jixiaop@udel.edu
+    "$";302-831-3086;302-831-3086
+    "$"University of Delaware;
+    "$"Inclusion Criteria:<br><br>  -  male or female ages 18-25 years old<br><br>  -  self-identified as Black/African Americans (BAA),<br><br>  -  poor sleep [Insomnia severity index (ISI) >10]<br><br>  -  having at least one of the cardiometabolic risk factors on the Life's Essential 8<br>     checklist for cardiovascular health, as defined by the American Heart Association,<br>     including health factors confirmed by fasting blood testing during the first lab<br>     visit (fasting blood glucose =110mg/dL, high-density lipoprotein (good cholesterol)<br>     = 40 mg/dL for males and = 50 mg/dL for females, triglycerides =150mg/dL, total<br>     cholesterol =200 mg/dL, blood pressure =130/85mmHg, waist circumference=40 inches<br>     for males, =35 inches for females) or healthy behaviors such as short sleep (<7<br>     hours), smoking or inactive (<150 minutes/week of moderate aerobic activity such as<br>     gardening, social dancing, or < 75 minutes/week of vigorous aerobic activity such as<br>     running, swimming laps, jumping rope), and (e) own a smartphone (iPhone or Android).<br><br>  -  own a smartphone (iPhone or Android).<br><br>Exclusion Criteria:<br><br>  -  self-report medical conditions [i.e., major depressive disorder [Patient Health<br>     Questionnaire-9 (PHQ-9) =15)<br><br>  -  diagnosed obstructive apnea] that may affect sleep<br><br>  -  regular use of medications with substantial impact on sleep and cardio-metabolic<br>     markers<br><br>  -  shift worker<br><br>  -  smoker<br><br>  -  alcohol abuse (Alcohol Use Disorders Identification Test--short form score =7 for<br>     males and =5 for females)<br><br>  -  self-report pregnancy/lactation.
+    "$$"Sleep Deprivation;Insomnia;Metabolic Syndrome
+    "$"Behavioral: sleep chatbot
+    "$"Total sleep time;Sleep efficiency;Intra-individual variability in midsleep times;Insomnia Severity
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"Metabolic health
+    "$$"1901939-4
+    "$$$$$False$university$30$psychology/psychiatry/behavioral science$large language model chatbot for diagnosis assistance$patient-relevant outcome$False$False$False$False$False$False$False$True$False$False$False
+04/10/2025 15:38:13$14151823$"NCT06496152
+    "$"22 July 2024
+    "$"Knowledge, Attitude, and Perceptions Towards Artificial Intelligence Among Dental Students
+    "$"Knowledge, Attitude, and Perceptions Towards Artificial Intelligence Among Dental Students of Faculty of Dentistry, Tanta University, Egypt
+    "$"Tanta University
+    "$"Yes
+    "$20240703$"03/07/2024
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT06496152
+    "$"Not recruiting
+    "$"No
+    "$"18 Years
+    "$"24 Years
+    "$"All
+    "$"August 1, 2024
+    "$"371
+    "$"Observational
+    "$$$$" 
+    "$"AlShimaa Elsandoby, Assistant Lecturer
+    "$$"shimaa_elsandoby@dent.tanta.edu.eg
+    "$"01028559097
+    "$$"Inclusion Criteria:<br><br>  -  all dental students of Faculty of Dentistry, Tanta University<br><br>Exclusion Criteria:<br><br>  -  The postgraduate students
+    "$$"Artificial Intelligence
+    "$"Other: questionnaire
+    "$"The online form by questionnaire
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$$$"artificial intelligence
+    "$$$$$$university$371$other disease categories$likely entry error$operational outcome$False$False$False$False$False$False$False$False$False$False$False
+04/10/2025 15:38:13$13571452$"ChiCTR2300078056
+    "$"3 December 2023
+    "$"Application of artificial intelligence to identify recurrent laryngeal nerve in endoscopic thyroidectomy
+    "$"Application of artificial intelligence to identify recurrent laryngeal nerve in endoscopic thyroidectomy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    "$"Peking Union Medical College Hospital
+    "$"No
+    "$20231128$"2023-11-28
+    "$"ChiCTR
+    "$"https://www.chictr.org.cn/showproj.html?proj=188805
+    "$"Recruiting
+    "$"No
+    "$$$"Both
+    "$"2023-02-01
+    "$"Real-time tracking technology of recurrent laryngeal nerve assisted endoscopic thyroidectomy group:30;Endoscopic Thyroid Surgery Group:30;
+    "$"Interventional study
+    "$"Historical control
+    "$"0
+    "$"China
+    "$"Surong Hua
+    "$$"Department of General Surgery, Peking Union Medical College Hospital (PUMCH), Beijing, China
+    "$"huasurong@tsinghua.org.cn
+    "$"+86 186 0108 8658
+    "$"Peking Union Medical College Hospital 
+    "$"Inclusion criteria: (1)18-80 year-old patients who underwent endoscopic thyroidectomy in PUMCH, (2)those who were not converted to open surgery during endoscopic thyroidectomy, (3)patients without previous cervical and chest deformities, patients without a history of cervical and thoracic surgery and trauma, (4)patients or their family members who was able to understand the research protocol and was willing to participate in this study and signed the consent form.
+    "$"Exclusion criteria: (1) Previous history of neck and chest trauma, surgery, or neck and chest deformities;<br>(2) During the operation, it was found that there were patients with clear anatomical variations of the recurrent laryngeal nerve and tumor invasion of the recurrent laryngeal nerve;<br>(3) Refusing to undergo endoscopic thyroid surgery;<br>(4) Those who are unable to complete laparoscopic thyroid surgery due to various reasons;<br>(5) Patients or family members are unable to understand the conditions and objectives of this study.
+    "$"Thyroid disease
+    "$"Real-time tracking technology of recurrent laryngeal nerve assisted endoscopic thyroidectomy group:Application of real-time tracking technology of recurrent laryngeal nerve during operation;Endoscopic Thyroid Surgery Group:None;
+    "$"Frequency of use of recurrent laryngeal nerve monitor in endoscopic thyroidectomy;
+    "$"National High Level Hospital Clinical Research Funding
+    "$"Approved
+    "$"30/01/2023
+    "$$"Zhu zhaohui
+    "$"+86 133 6621 9535
+    "$$$"Maximum stretching amplitude of recurrent laryngeal nerve in endoscopic thyroidectomy;The times of pulling the recurrent laryngeal nerve in endoscopic thyroidectomy;Operation duration;
+    "$$$$$$$False$hospital$60$endocrinology$AI-assisted medical procedure$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$6241723$"ChiCTR-IIR-17011574
+    "$"12 June 2017
+    "$"Prospective clinical trial of the impact of an artificial intelligence embedded mobile app on patients with spinal musculoskeletal disorders.
+    "$"Clinical trial of the effectivness of an artificial intelligence embedded mobile app to manage spinal musculoskeletal disorders.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    "$"The First Affiliated Hospital, Sun Yat-sen University.
+    "$"Yes
+    "$19900101$"1990-01-01
+    "$"ChiCTR
+    "$"http://www.chictr.org.cn/showproj.aspx?proj=19644
+    "$"Not Recruiting
+    "$"No
+    "$"18
+    "$"50
+    "$"Male
+    "$"2017-08-01
+    "$"Experimental group:85;Control:85;
+    "$"Interventional study
+    "$"Randomized parallel controlled trial
+    "$"I (Phase I study)
+    "$"China
+    "$"Wai Leung Ambrose Lo 
+    "$$"58 Second Zhongshan Road, Guangzhou, Guangdong, China
+    "$"ambroselo0726@outlook.com
+    "$"+86 13288604921
+    "$"The First Affiliated Hospital, Sun Yat-sen University. 
+    "$"Inclusion criteria: 1.  Diagnosed for chronic neck and back pain. <br>2.  Age between 18-50 <br>3.  Experience neck and back pain for over 1 month
+    "$"Exclusion criteria: 1. History psychological disorder or the use of antipsychotic medications. <br>2. People with nerve damage and neurological disorder. <br>3. No severe cognitive impairment (assessed by Mini-Mental State Examination)
+    "$"Chronic low back pain
+    "$"Experimental group:AI guided rehabilitation exercise.;Control:Routine physiotherapy care;
+    "$"Quality of Life;
+    "$"Guangzhou City Research & Technology Collaborative Innovation Projects (Grant No. 2017010160387), China Postdoctoral Science Foundation Grant (Grant No. 2016M592581) 
+    "$$$$$$$$"Numerical pain rating scale;Oswetry disability index;Roland-Morris disability questionnaire;Adherence in rehabilitation programme;Self-perceived global improvement;Transverse abdominis morphology;Multifidus morphology;Trunk muscles EMG activity;Trunk strengths dynamometer tests;Muscle mechanical properties;
+    "$$$$$$$False$hospital$170$other disease categories$AI-based behavioral intervention$patient-relevant outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$14670831$"NCT06468332
+    "$"10 February 2025
+    "$"Artificial Intelligence-based Platform, Integrating Pathologic, Imaging and Molecular Profiles of Prostate Cancer
+    "$"Development of Artificial Intelligence-based Multiplex Network for Individualized Risk Stratification of Prostate Cancer
+    "$"Azienda Ospedaliero Universitaria Maggiore della Carita
+    "$"Yes
+    "$20240610$"10/06/2024
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT06468332
+    "$"Recruiting
+    "$"No
+    "$"18 Years
+    "$"80 Years
+    "$"Male
+    "$"October 30, 2024
+    "$"400
+    "$"Observational
+    "$$$"Italy
+    "$" ; ; 
+    "$"Carlotta Palumbo, MD;Carlotta Palumbo, MD;Carlotta Palumbo, MD
+    "$$";carlotta.palumbo@uniupo.it;carlotta.palumbo@uniupo.it
+    "$";+393491289501;
+    "$"University of Piemonte Orientale;
+    "$"Inclusion Criteria:<br><br>  -  Adults patients, aged between 18 and 80 years<br><br>  -  Signed an informed consent form (ICF) indicating that the subject or his closest<br>     relative understands the purpose of and procedures required for the study and is<br>     willing to participate in the study; subjects must be willing to allow MRI<br>     anonymized revision and processing and biopsy/Radical Prostatectomy (RP) material<br>     genomic/transcriptomic and exploratory analyses. Moreover they must be willing to<br>     adhere to normal clinical follow-up.<br><br>  -  Availability of MRI conducted prior to RP, with at least T2 weighted image (T2W),<br>     diffusion-weighted imaging (DWI), dynamic contrast-enhanced (DCE) sequences in<br>     accordance with the American College of Radiology standards for Prostate<br>     Imaging-Reporting and Data System (PI-RADS) evaluation. This criterion is not<br>     mandatory for the metastatic cohort.<br><br>  -  Availability of formalin-fixed paraffin-embedded (FFPE) radical prostatectomy<br>     specimen for genomic, transcriptomic and exploratory analyses. Prostate or<br>     metastasis biopsy FFPE are acceptable for the metastatic cohort.<br><br>  -  Histological diagnosis of adenocarcinoma of the prostate<br><br>  -  Availability of PSA dosage and clinical evaluation of the tumor (via digital rectal<br>     exam [DRE]) in the 3 months preceding surgery (except for the metastatic cohort,<br>     where surgery does not apply).<br><br>  -  Availability of at least one postoperative prostate specific antigen (PSA) in<br>     between 3 and 8 weeks after surgery (except for the metastatic cohort, where surgery<br>     does not apply).<br><br>  -  Minimal follow-up duration of 2 years (or until death) after surgery (or after<br>     diagnosis for the metastatic patient).<br><br>Exclusion Criteria:<br><br>  -  Bilateral orchiectomy<br><br>  -  Neoadjuvant hormone therapy or any prostate cancer-directed therapy before radical<br>     prostatectomy<br><br>  -  History of pelvic radiation before RP.<br><br>  -  Active malignancy in the last 24 months, excluding Prostate Cancer,<br>     Non-muscle-invasive Bladder Cancer (NMIBC), cured skin cancer (excluding melanoma)<br>     or other malignancies with minimal risk of recurrence.<br><br>  -  Active surveillance lasting more than 12 months
+    "$$"Prostate Cancer
+    "$$"integration of pathologic, imaging, genomic and transcriptomic profiles of prostate cancer;Validation of the artificial intelligence-based platform generated in the previous phase
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$$"PRISM-AI
+    "$"CE137/2024
+    "$$$$$False$hospital$400$oncology: genitourinary$AI-assisted imaging$operational outcome$False$False$False$False$True$False$False$False$False$False$False
+04/10/2025 15:38:13$13759763$"CTRI/2024/02/062448
+    "$"4 March 2024
+    "$"Developing an Artificial intelligence system to  identify  anatomical structures in  radiographs
+    "$"Developing an Artificial Intelligence model in detecting Mandibular canal, Mental foramen and Maxillary sinus in Panoramic radiographs - NIL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    "$"Vobilineni Vinathi Sai Subhanika
+    "$"Yes
+    "$20240208$"08-02-2024
+    "$"CTRI
+    "$"http://www.ctri.nic.in/Clinicaltrials/pmaindet2.php?trialid=93133
+    "$"Not Recruiting
+    "$"No
+    "$$$$"15-02-2024
+    "$"10000
+    "$"Observational
+    "$"Other   Method of generating randomization sequence:Stratified randomization  Method of allocation concealment:Other  Blinding and masking:Not Applicable
+    "$"N/A
+    "$"India
+    "$"Vobilineni Vinathi Sai Subhanika
+    "$$"Room no 1, Department of Oral Medicine and Radiology, Sibar institute of dental sciences, Takkellapadu, Guntur, 522509 
+    "$"dra.samatha@gmail.com
+    "$"9391307194
+    "$"Sibar Institute of Dental Sciences
+    "$"Inclusion criteria: 1. Panoramic radiographs of subjects whose age is above 14 years. <br/ ><br>    2. Region of interest in panoramic radiographs should be well defined.
+    "$"Exclusion criteria: Panoramic radiographs with the presence of artifacts.
+    "$$"Intervention1: NIL: NIL<br>
+    "$"Detection of Mandibular Canal, Mental Foramen and Maxillary SinusTimepoint: Baseline
+    "$"SIBAR INSTITUTE OF DENTAL SCIENCES, GUNTUR
+    "$"Approved
+    "$"30/03/2023
+    "$$"IEC - SIBAR
+    "$$$$"Detection of Maxillary Sinus Pneumatization and Maxillary Sinus PathologiesTimepoint: Baseline
+    "$$"NIL
+    "$$$$$False$individual (person)$10000$likely entry error$AI-assisted imaging$operational outcome$False$False$False$False$False$False$True$False$False$False$False
+04/10/2025 15:38:13$13313799$"NCT05681949
+    "$"4 September 2023
+    "$"Therapeutic Assistance and Decision-making Algorithms in Hepatobiliary Tumor Boards
+    "$"Evaluation of the Trustworthiness of the Application of Artificial Intelligence and Decision Support Systems for the Creation of Tumor Conference Protocols
+    "$"Charite University, Berlin, Germany
+    "$"Yes
+    "$20221213$"13/12/2022
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT05681949
+    "$"Not recruiting
+    "$"No
+    "$"18 Years
+    "$"N/A
+    "$"All
+    "$"November 2023
+    "$"1200
+    "$"Interventional
+    "$"Allocation: Randomized. Intervention model: Parallel Assignment. Primary purpose: Health Services Research. Masking: Single (Participant). 
+    "$"N/A
+    "$"Germany
+    "$" ; ; 
+    "$"Felix Krenzien;Felix Krenzien;Felix Krenzien
+    "$$";felix.krenzien@charite.de;felix.krenzien@charite.de
+    "$";+4930450552001;+4930450552001
+    "$"Charite University, Berlin, Germany;
+    "$"<br>        Inclusion Criteria:<br><br>          -  Age = 18 years<br><br>          -  Valid informed consent<br><br>          -  Patient information available in the hospital information system or Health Data<br>             Platform (HDP)<br><br>          -  Enrollment in the hepatobiliary tumor conference<br><br>          -  Diagnosis of any of the following entities: Colorectal liver metastasis, Gallbladder<br>             carcinoma, Hepatocellular carcinoma (HCC), mixed cell carcinoma, or fibrolamellar<br>             carcinoma, Perihilar cholangiocarcinoma (Klatskin tumors), Intrahepatic<br>             cholangiocarcinoma (iCC)<br><br>        Exclusion Criteria:<br><br>          -  Patient does not consent / incapable of giving consent<br><br>          -  Missing findings in the hospital information system<br><br>          -  Patient is seeking for a second opinion and is not being treated at the study<br>             institution<br>      
+    "$$"Hepatocellular Carcinoma;Fibrolamellar Hepatocellular Carcinoma;Cholangiocarcinoma, Perihilar;Intrahepatic Cholangiocarcinoma;Metastasis to Liver;Gallbladder Carcinoma
+    "$"Other: ADBoard
+    "$"Concordance (yes/no) of interdisciplinary tumor conference treatment recommendation with ADBoard-supported recommendation;The reproducibility of the therapy recommendations made by ADBoard (yes/no)
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"Completeness of the patient information with regard to decision-relevant parameters;Quality of the explainability of the tumor conference protocols (ADBoard);Time between primary presentation and start of diagnostics/therapy as recommended
+    "$"ADBoard
+    "$"EA4/169/22
+    "$"German Research Center for Artificial Intelligence
+    "$$$$False$university$1200$oncology: hepatobiliary$other use of AI$operational outcome$False$False$False$False$False$False$False$False$False$False$True
+04/10/2025 15:38:13$10132125$"ChiCTR1900024529
+    "$"30 November 2020
+    "$"Artificial intelligence based on deep learning for auxiliary diagnosis of early-stage esophageal cancer
+    "$"Artificial intelligence based on deep learning for auxiliary diagnosis of early-stage esophageal cancer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    "$"Zhongshan Hospital of Fudan University
+    "$"Yes
+    "$20190714$"2019-07-14
+    "$"ChiCTR
+    "$"http://www.chictr.org.cn/showproj.aspx?proj=33037
+    "$"Not Recruiting
+    "$"No
+    "$"18
+    "$"80
+    "$"Both
+    "$"2020-01-01
+    "$"Target condition:3400;Difficult condition:0
+    "$"Diagnostic test
+    "$"Sequential
+    "$"0
+    "$"China
+    "$"Zhong Yunshi
+    "$$"180 Fenglin Road, Xuhui District, Shanghai, China
+    "$"zhongamy2002@163.com
+    "$"+86 13564623481
+    "$"Endoscopy center, Zhongshan Hospital of Fudan University
+    "$"Inclusion criteria: (1) the age is greater than 18 years old, and less than or equal to 80 years old;<br>(2) failure of esophageal endoscopy in the past 1 year (except for treatment study);<br>(3) suitable for esophageal endoscopy (treatment);<br>(4) informed consent.
+    "$"Exclusion criteria: 1. patients undergoing emergency examination (treatment) of upper gastrointestinal due to hematemesis and abdominal pain;<br>2. With history of other malignant tumors;<br>3. American society of anesthesiologists (ASA) classification is greater than III;<br>4. pregnancy and lactation;<br>5. patients or family members cannot understand the conditions and objectives of this study.
+    "$"early-stage upper gastrointestinal cancer
+    "$"Gold Standard:Pathology examination;Index test:1.&#32;endoscopic&#32;examination&#32;with&#32;artificial&#32;intelligence&#32;system;<br>2.&#32;conventional&#32;endoscopy&#32;examination.;
+    "$"true positive rate;false negative rate;SPE, SEN, ACC, AUC of ROC;
+    "$"National Key R&D Program (2018YFC1315000/2018YFC1315005); National Natural Science Foundation (81702305,81861168036); Shanghai Scientific Funds 16DZ2280900; 17YF1402000; 18SG08
+    "$"Approved
+    "$"25/06/2019
+    "$$"Ethics Committee of Zhongshan Hospital Fudan University
+    "$$$$"Hematoplastic index;CT;
+    "$$$$$$$False$hospital$3400$oncology: gastrointestinal$AI-based diagnostic test$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$14266580$"ChiCTR2400088514
+    "$"26 August 2024
+    "$"Evaluation of the effect of using castor oil combined with low-dose polyethylene glycol electrolyte based on artificial intelligence for pre colonoscopy intestinal cleansing
+    "$"Evaluation of the effect of using artificial intelligence based castor oil combined with low-dose polyethylene glycol electrolyte for pre colonoscopy intestinal cleansing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    "$"Renmin Hospital of Wuhan University
+    "$"Yes
+    "$20240820$"2024-08-20
+    "$"ChiCTR
+    "$"https://www.chictr.org.cn/showproj.html?proj=239260
+    "$"Not Recruiting
+    "$"No
+    "$"18
+    "$"75
+    "$"Both
+    "$"2024-08-31
+    "$"Group A:100;Group B:100;Group C:100;
+    "$"Interventional study
+    "$"Parallel
+    "$"N/A
+    "$"China
+    "$"Jun Zhang
+    "$$"Department of Gastroenterology, Renmin Hospital of Wuhan University, Wuhan, China
+    "$"zj2005-2008@163.com
+    "$"+86 159 9426 6383
+    "$" Renmin Hospital of Wuhan University
+    "$"Inclusion criteria: 1. The age range for enrollment is 18 to 75 years old, with no gender restrictions;<br>2. Complete cognitive ability;<br>3. Patients who undergo morning colonoscopy examination;<br>4. Willing and able to tolerate colonoscopy examination, following research instructions;<br>5. Take bowel cleansing medication as instructed and sign an informed consent form
+    "$"Exclusion criteria: 1. Severe stenosis of the rectum, perianal abscess, and anal fissure;<br>2. Acute severe colitis and severe radiation enteritis;<br>3. Intestinal obstruction;<br>4. Chronic constipation;<br>5. Irritable bowel syndrome;<br>6. History of previous colon resection and anastomosis;<br>7. Patients with extensive adhesions in the abdominal cavity;<br>8. Patients with advanced cancer accompanied by extensive intra-abdominal metastasis;<br>9. Acute diffuse peritonitis;<br>10. Severe ascites and pregnant women;<br>11. Patients with severe heart and lung failure, severe hypertension, cerebrovascular disease, mental disorders, and coma;<br>12. Castor oil allergy
+    "$"intestine cleaning
+    "$"Group A:CaO -1L-PEG;Group B:(CaO- 2 L-PEG);Group C:3 L PEG;
+    "$"intestinal preparation ;
+    "$"No
+    "$"Approved
+    "$"04/06/2024
+    "$$"Yuan Chen
+    "$"+86 27 8824 1911
+    "$$$"First defecation time;Total number of bowel movements;Time for cecal intubation;Detection rate of polyps and adenomas;adverse event;
+    "$$$$$$$False$hospital$300$gastroenterology$likely entry error$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$9746970$"ChiCTR2000036028
+    "$"31 August 2020
+    "$"Automatic  PD-L1 immunohistochemistry evaluation system for non-small cell lung cancer based on deep learning
+    "$"Establishment and evaluation of PD-L1 immunohistochemical automatic evaluation system for non-small cell lung cancer immunotherapy based on deep learning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    "$"Fudan University Shanghai Cancer Center
+    "$"Yes
+    "$20200821$"2020-08-21
+    "$"ChiCTR
+    "$"http://www.chictr.org.cn/showproj.aspx?proj=59078
+    "$"Not Recruiting
+    "$"No
+    "$"18
+    "$"80
+    "$"Both
+    "$"2020-09-01
+    "$"Target condition:300;Difficult condition:10
+    "$"Diagnostic test
+    "$"Sequential
+    "$"0
+    "$"China
+    "$"Yuan Li
+    "$$"270 Dong'an Road, Xuhui District, Shanghai
+    "$"lumoxuan2009@163.com
+    "$"+86 18017317261
+    "$"Fudan University Shanghai Cancer Center
+    "$"Inclusion criteria: 1. Complete clinical data and pathological information;<br>2. Patients who signed written informed consent to participate in the study;<br>3. Sections of NSCLC stained with PD-L1 immunohistochemistry;<br>4. The number of tumor cells under microscope is more than 100.
+    "$"Exclusion criteria: 1. Preoperative treatment (neoadjuvant chemotherapy or radiotherapy);<br>2. metastatic lung cancer.
+    "$"non-small cell lung cancer
+    "$"Gold Standard:The consistency between PD-L1 pathologist's interpretation and artificial intelligence interpretation was not less than 0.8;Index test:PD-L1&#32;immunohistochemical&#32;staining;&#32;artificial&#32;intelligence;&#32;paraffin&#32;embedded&#32;specimens&#32;of&#32;non-small&#32;cell&#32;lung&#32;cancer;
+    "$"consistency (Kappa);
+    "$"Three year action plan for promoting clinical skills and clinical innovation in municipal hospitals (2020-2022) major clinical research projects
+    "$"Not approved
+    "$"26/08/2013
+    "$$$$$$$$$$$$$False$university$310$oncology: thoracic$AI-based diagnostic test$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$10433756$"ChiCTR2000038813
+    "$"5 January 2021
+    "$"Individualized 3D printing skull restoration based on artificial intelligence analysis and transmission data
+    "$"Individualized 3D printing skull restoration based on artificial intelligence analysis and transmission data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    "$"Sichuan Academy of Medical Sciences · Sichuan Provincial people's Hospital
+    "$"Yes
+    "$20201004$"2020-10-04
+    "$"ChiCTR
+    "$"http://www.chictr.org.cn/showproj.aspx?proj=56847
+    "$"Recruiting
+    "$"No
+    "$$$"Both
+    "$"2020-10-10
+    "$"experimental group:100;
+    "$"Interventional study
+    "$"Single arm
+    "$"N/A
+    "$"China
+    "$"Feng Jinzhou
+    "$$"32 West Second Section of First Ring Road, Qingyang District, Chengdu, Sichuan, China
+    "$"feng720930@126.com
+    "$"+86 13688360199
+    "$"Sichuan Academy of Medical Sciences · Sichuan People's Hospital
+    "$"Inclusion criteria: 1. Patients aged from 14 to 74 years old;<br>2. Patients with skull defect area more than 3 * 3cm and normal intracranial pressure;<br>3. Patients are willing to accept customized personalized skull repair products for skull repair.
+    "$"Exclusion criteria: 1. There were patients with uncontrollable infection in cranioplasty operation area;<br>2. Patients who are bedridden for a long time are in poor physical condition and can not tolerate surgical repair.
+    "$"Skull defect
+    "$"experimental group:basis treatment;
+    "$"Thin-section CT of the head;Skull defect area;Repair degree of skull defect;
+    "$"Sichuan provincial Department of Science and Technology, Sichuan Hushu turing additive Manufacturing Technology Co.LCT?Jiangyou People's Hospital
+    "$"Approved
+    "$"03/09/2020
+    "$"N/A
+    "$"Zhengping Yong, Haijiang Wang
+    "$$"N/A
+    "$$$$"N/A
+    "$$$$$False$research center$100$other disease categories$medical device incorporating AI$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$10364027$"NCT04378660
+    "$"12 December 2020
+    "$"Artificial Intelligence (AI) Validation Study for Polyp Detection
+    "$"Artificial Intelligence Validation Trial for Polyp Detection: Pilot Study
+    "$"Universitaire Ziekenhuizen Leuven
+    "$"No
+    "$20200420$"20/04/2020
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/show/NCT04378660
+    "$"Not recruiting
+    "$"No
+    "$"16 Years
+    "$"N/A
+    "$"All
+    "$"October 30, 2019
+    "$"357
+    "$"Interventional
+    "$"Allocation: N/A. Intervention model: Single Group Assignment. Primary purpose: Diagnostic. Masking: None (Open Label). 
+    "$"N/A
+    "$"Belgium
+    "$" 
+    "$"Raf Bisschops
+    "$$$$"UZ Leuven
+    "$"<br>        Inclusion Criteria:<br><br>          -  > 18 years<br><br>          -  Diagnostic or screening colonoscopy<br><br>          -  Therapeutic colonoscopy<br><br>        Exclusion Criteria:<br><br>          -  Inability to give informed consent by the patient or legal representative<br><br>          -  < 18 years old<br><br>          -  Any contraindication for colonoscopy or biopsies of the colon<br><br>          -  Uncontrolled coagulopathy<br><br>          -  Confirmed diagnosis of inflammatory bowel disease<br><br>          -  Short bowel or ileostomy<br><br>          -  Pregnancy<br>      
+    "$$"Polyp of Colon
+    "$"Diagnostic Test: Artificial intelligence for polyp detection
+    "$"Diagnostic accuracy of the novel AI system compared to endoscopic diagnosis as gold standard
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"Endoscopist's polyp miss rate as number of extra AI detections
+    "$$"s59405
+    "$"Nuovo Regina Margherita Hospital, Rome, Italy;Universitäts Medizin, Mainz, Germany
+    "$$$$False$hospital$357$oncology: gastrointestinal$AI-based diagnostic test$operational outcome$False$False$False$False$False$False$False$False$True$False$False
+04/10/2025 15:38:13$11009536$"NCT04892316
+    "$"7 June 2021
+    "$"Using Machine Learning to Adapt Visual Aids for Patients With Low Vision
+    "$"Using Machine Learning to Adapt Visual Aids for Patients With Low Vision
+    "$"Sun Yat-sen University
+    "$"No
+    "$20210517$"17/05/2021
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/show/NCT04892316
+    "$"Recruiting
+    "$"No
+    "$"3 Years
+    "$"105 Years
+    "$"All
+    "$"July 27, 2020
+    "$"400
+    "$"Observational
+    "$$$"China
+    "$" ; 
+    "$"Jianmin Hu, M.D., Ph.D.;Jianmin Hu, M.D., Ph.D.
+    "$$"doctorhjm@163.com;doctorhjm@163.com
+    "$"+8615359595888;+8615359595888
+    "$$"<br>        Inclusion Criteria:<br><br>          -  Low vision<br><br>          -  Aged 3 to 105<br><br>        Exclusion Criteria:<br><br>          -  Severe systemic disease<br><br>          -  Failure to sign informed consent or unwilling to participate<br>      
+    "$$"Ophthalmology;Artificial Intelligence;Low Vision Aids
+    "$"Diagnostic Test: Diagnostic test
+    "$"Accuracy of fitting results for assisting devices
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$"Time cost for fitting assisting devices
+    "$$"SFLV-2020
+    "$$$$$False$university$400$ophthalmology$other use of AI$operational outcome$False$False$False$True$False$False$False$False$False$False$False
+04/10/2025 15:38:13$13915782$"NCT05768698
+    "$"29 April 2024
+    "$"Assessment of Left Ventricular Filling Pressure by Applying Artificial Intelligence Algorithms to Left Atrial Speckle-tracking Echocardiography
+    "$"Valutazione Delle Pressioni di Riempimento Del Ventricolo Sinistro Attraverso l'Impiego di un Software di Intelligenza Artificiale Applicato Alla Stima Dello Strain Atriale Sinistro Con Ecocardiografia Speckletracking: Studio di Validazione Mediante Cateterismo Cardiaco
+    "$"Istituto Auxologico Italiano
+    "$"No
+    "$20230222$"22/02/2023
+    "$"ClinicalTrials.gov
+    "$"https://clinicaltrials.gov/ct2/show/NCT05768698
+    "$"Recruiting
+    "$"No
+    "$"18 Years
+    "$"N/A
+    "$"All
+    "$"July 20, 2021
+    "$"20
+    "$"Observational [Patient Registry]
+    "$$$"United States
+    "$" ; 
+    "$"Luigi Badano, MD, Ph.D.;Jane Vogel
+    "$$"l.badano@auxologico.it;jane.vogel@philips.com
+    "$"+390261911;603-489-8329
+    "$$"<br>        Inclusion Criteria:<br><br>          -  = 18 yo,<br><br>          -  Signed informed consent to be part of this study,<br><br>          -  No pregnancy,<br><br>          -  Good acoustic window and patient cooperation to obtain good 2- and 3-dimensional<br>             datasets focused on left atrium (LA),<br><br>        Exclusion Criteria:<br><br>          -  Unwillingness to be part of the study,<br><br>          -  Patients with poor 2-dimensional imaging quality in = 1 LA segment or lacking of a<br>             discernible R-R interval, which might preclude accurate strain measurements,<br><br>          -  Patients with more than mild mitral valve heart disease, aortic regurgitation, left<br>             side valvular prosthesis or mitral valve repair, mitral annulus calcification (= 5<br>             mm),<br><br>          -  Patients with history or presence of atrial fibrillation (AF), supraventricular<br>             arrhythmias, ventricular paced rhythm, left bundle branch block (LBBB),<br><br>          -  Patients taking diuretics or vasodilators (nitrates) on the day of the examination,<br>             which could alter loading conditions.<br>      
+    "$$"Heart Failure, Diastolic;Echocardiography
+    "$"Diagnostic Test: Software algorithm
+    "$"Left ventricular filling pressure
+    "$"Please refer to primary and secondary sponsors
+    "$$$$$$$$$"LVEDP
+    "$"09V102
+    "$"Philips Healthcare
+    "$$$$False$research center$20$cardiology/cardiovascular diseases$AI-based diagnostic test$patient-relevant outcome$False$False$False$False$False$False$False$True$False$False$False
+04/10/2025 15:38:13$14095455$"KCT0009523
+    "$"24 June 2024
+    "$"Big Data Collection for the Development of Artificial Intelligence Algorithm for Severity Classification of Rehabilitation Patients Using 3D Camera Video Data
+    "$"Big Data Collection for the Development of Artificial Intelligence Algorithm for Severity Classification of Rehabilitation Patients Using 3D Camera Video Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    "$"Seoul Metropolitan Government Seoul National University Boramae Medical Center
+    "$"No
+    "$20240613$"2024-06-13
+    "$"CRIS
+    "$"https://cris.nih.go.kr/cris/search/detailSearchEn.do?seq=27438
+    "$"Not Recruiting
+    "$"No
+    "$"18(Year)
+    "$"No Limit
+    "$"Both
+    "$"2024-06-03
+    "$"300
+    "$"Observational Study
+    "$"Observational Study Model : Cohort, Time Perspective : Prospective, Enrollment : 300, Biospecimen Retention : Not collect nor Archive
+    "$"NA
+    "$"Korea, Republic of
+    "$"Shiuk
+    "$"Lee
+    "$"1 Gwanak-ro, Gwanak-gu, Seoul
+    "$"shiuk.lee@gmail.com
+    "$"+82-2-870-2671
+    "$"Seoul National University
+    "$"Inclusion criteria: Common Selection Criteria:<br>- Adults aged 18 and over<br>- Those who have consented to participate in the study<br>- Those who meet the selection criteria for each of the following disease groups:<br><br>A. Cerebrovascular Disease<br>Patients with paralysis due to cerebral infarction or hemorrhage who are capable of exercising independently<br><br>B. Knee Osteoarthritis<br>Patients who visit for rehabilitation therapy for knee osteoarthritis<br><br>C. Adhesive Capsulitis<br>Patients requiring continuous exercise therapy after treatment for shoulder pain<br><br>D. Healthy Individuals
+    "$"Exclusion criteria: - Cases with uncontrolled internal or surgical diseases (such as hypertension, diabetes, cardiovascular diseases)<br>- Cases where the patient experiences breathlessness severe enough to prevent conversation, even during light activities such as slow walking<br>- Cases with psychiatric or neurological disorders that make walking or maintaining balance impossible<br>- Cases accompanied by severe aphasia to the extent that communication is not possible<br>- Other cases where the researcher determines that the participant's condition makes participation in the clinical trial difficult
+    "$";Diseases of the musculoskeletal system and connective tissue
+    "$$"Classification accuracy by disease severity
+    "$"Korea Medical Device Development Fund
+    "$"Submitted approval
+    "$"04/12/2023
+    "$$"Seoul Metropolitan Goverment Seoul National Unviersity Boramae Medical Center Institutional Review Board
+    "$"+82-2-870-1852
+    "$$$"Standardization of severity classification criteria by assessment item 
+    "$$$$$$$True$government institution$300$orthopedics$likely entry error$operational outcome$False$True$True$False$False$False$False$False$False$False$False
