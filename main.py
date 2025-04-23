@@ -107,14 +107,12 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
     # Define sponsor categories as an enum
     class SponsorType(str, Enum):
         UNIVERSITY = 'university'
-        HOSPITAL = 'hospital'
+        HOSPITAL_CLINIC = 'hospital, clinic, or medical center'
         GOVERNMENT = 'government institution'
         FOUNDATION = 'foundation'
         COMPANY = 'private company'
         INDIVIDUAL = 'individual (person)'
         RESEARCH = 'research center'
-        CLINIC = 'private clinic'
-        NON_PROFIT = 'non-profit health institution'
         UNCERTAIN = 'uncertain'
 
     # Initialize the classifier
@@ -167,14 +165,15 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
         ONCOLOGY_GYNECOLOGICAL = 'oncology: gynecological'
         ONCOLOGY_HEPATOBILIARY = 'oncology: hepatobiliary'
         ONCOLOGY_THORACIC = 'oncology: thoracic'
-        ONCOLOGY_SKIN = 'oncology: skin and soft tissue'
+        ONCOLOGY_SKIN = 'oncology: skin'
+        ONCOLOGY_BONE = 'oncology: bone and soft tissue'
         ONCOLOGY_HEAD_NECK = 'oncology: head and neck'
         ONCOLOGY_GENITOURINARY = 'oncology: genitourinary'
         ONCOLOGY_BLOOD = 'oncology: blood and lymphatic'
         ONCOLOGY_ENDOCRINE = 'oncology: endocrine and neuroendocrine'
         ONCOLOGY_BRAIN = 'oncology: brain and CNS'
         ONCOLOGY_MULTIPLE = 'oncology: multiple tumor types'
-        ONCOLOGY_MISC = 'oncology: miscellaneous cancers'
+        ONCOLOGY_OTHER = 'oncology: other cancers'
         OPHTHALMOLOGY = 'ophthalmology'
         ORTHOPEDICS = 'orthopedics'
         OTOLARYNGOLOGY = 'otolaryngology (ENT)'
@@ -222,16 +221,17 @@ Return only the category name, nothing else."""
     # 5 TYPES OF INTERVENTIONS
     class InterventionType(str, Enum):
         MEDICAL_DEVICE_INCORPORATING_AI = 'medical device incorporating AI'
-        AI_BASED_BEHAVIORAL_INTERVENTION = 'AI-based behavioral intervention'
         AI_ASSISTED_MEDICAL_PROCEDURE = 'AI-assisted medical procedure'
         AI_ASSISTED_IMAGING = 'AI-assisted imaging'
         AI_BASED_DIAGNOSTIC_TEST = 'AI-based diagnostic test'
         AI_BASED_SCREENING_OR_DETECTION = 'AI-based screening or detection'
         AI_BASED_PREDICTION = 'AI-based prediction'
-        LARGE_LANGUAGE_MODEL_LLM_CHATBOT_FOR_DIAGNOSIS_ASSISTANCE = 'large language model chatbot for diagnosis assistance'
-        AI_TO_INFORM_PUBLIC_HEALTH_INTERVENTION = 'AI to inform public health intervention'
+        AI_BASED_CLASSIFICATION = 'AI-based classification'
+        AI_BASED_BEHAVIORAL_INTERVENTION = 'AI-based behavioral intervention'
+        AI_BASED_TEACHING_LEARNING = 'AI-assisted teaching/learning'
+        AI_TO_INFORM_HEALTH_INTERVENTION = 'AI to inform health intervention'
         OTHER = 'other use of AI'
-        LIKELY_ENTRY_ERROR = 'likely entry error'
+        LIKELY_ENTRY_ERROR = 'uncertain OR likely entry error'
 
     class InterventionClassification(BaseModel):
         intervention_type: InterventionType = Field(..., description="The type of intervention")
@@ -290,8 +290,8 @@ Return only the intervention type, nothing else."""
                 user_prompt=f"""Classify the primary outcome in the following row into one of the categories of primary outcomes in {[t.value for t in outcome_types]}
 
 The definitions of the categories are as follows:
-patient-relevant outcomes = measurements of direct patient benefit. clinically meaningful endpoints such as symptoms, need for treatment, mortality, survival, surgical operation time, quality of life
-operational outcomes = endpoints related to diagnostic yield, diagnostic accuracy, performance of the AI tool, satisfaction with the tool or procedure
+patient-relevant outcomes = measurements of direct patient benefit. clinically meaningful endpoints such as symptoms, need for treatment, mortality, survival, surgical operation time, quality of life, changes in patient behaviour, outcome of an operation.
+operational outcomes = outcomes related to performance of the AI tool. For example, endpoints related to diagnostic yield, accuracy of the tool, user satisfaction with the tool or procedure.
 
         
 The following is the description of the condition:
