@@ -51,6 +51,20 @@ class Classifier():
         prompt = f"""Classify the following {self.thing_to_classify_singular} into exactly one of these categories:
 {[t.value for t in self.categories]}
 
+Here are some examples of sponsor categorisations:
+Manipal Academy of Higher Education Manipal - university
+Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University - hospital, clinic, or medical center
+Tata Memorial Centre - government institution
+VRRX Therapeutics - private company
+Baker Heart and Diabetes Institute - research center
+Zhejiang University - university
+Academisch Medisch Centrum - hospital, clinic, or medical center
+DBT BIRAC - government institution
+Jordi Gol i Gurina Foundation - foundation
+Rongrong Hua - individual (person)
+KEM Hospital Research Centre - research center
+?. - TPT - uncertain
+
 <classifier_input> {request.thing_to_classify} </classifier_input>
 
 Return only the category name, nothing else."""
@@ -195,19 +209,22 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
     )
 
     async def classify_medical_specialties(df):
-        async def classify_specialty(condition):
+        async def classify_specialty(row):
             result = await medical_specialty_classifier.run(
                 user_prompt=f"""Classify the following medical condition into exactly one of these categories:
 {[t.value for t in MedicalSpecialty]}
 
-<condition>{condition}</condition>
+You can use the scientific title for additional context.
+
+Scientific title: <title>{row.Scientific_title}</title>
+Condition: <condition>{row.Condition}</condition>
 
 Return only the category name, nothing else."""
             )
             return result.data.category.value
         
         # Create tasks for all conditions
-        tasks = [classify_specialty(condition) for condition in df["Condition"]]
+        tasks = [classify_specialty(row) for _, row in df.iterrows()]
         # Run all tasks concurrently
         results = await asyncio.gather(*tasks)
         
@@ -247,11 +264,24 @@ Return only the category name, nothing else."""
             result = await classifier.run(
                 user_prompt=f"""Classify the intervention in the following row into one of the categories of intervention types in {[t.value for t in intervention_types]}
 
-The following is the name of the trial:
-<trial_name> {row.Public_title} </trial_name>
+You can use both the scientific trial name and intervention description for context. If the intervention column is blank or has a likely entry error, try to categorise the intervention based on only the title.
 
-The following is how the intervention is described in the trial, note that this may contain data entry errors:
-<intervention> {row.Intervention} </intervention>
+Scientific title: <scientific_title>{row.Scientific_title}</scientific_title>
+Intervention: <intervention>{row.Intervention}</intervention>
+
+Here are some examples of intervention categorisations:
+Smartwatch-Based AI Model for OSA Prediction - AI-based prediction
+Validation of an AI-Assisted Mediastinal EUS System - AI-assisted imaging
+Artificial Intelligence Enabled Decision Support for Selection of Patients for Lumbar Spine Surgery - AI to inform health intervention
+artificial intelligence-assisted colonoscopy procedure - AI-assisted medical procedure
+AI Chatbot-Based Learning on Dry Eye and Eye Strain Knowledge - AI-assisted teaching/learning
+Real-time Artificial Intelligence Model for Diagnosing Colorectal Polyp Pathology and Endoscopic Classification - AI-based diagnostic test
+Digital cervical cytology slide imaging system with artificial intelligence (AI) algorithm in vitro diagnostic (IVD) device - AI-based diagnostic test
+An Artificial Intelligence-based Prospective Study to Analyze PLAQUE Using CCTA - AI-based classification
+Artificial intelligence-assisted personalized diet - AI-based behavioral intervention
+artificial intelligence-assisted system in polyp detection and polyp classification - AI-based classification
+Role of AI in CE for the Identification of SB Lesions - AI-based screening or detection
+integration of AI in cardiac monitoring-based biosensors for point of care (POC) diagnostics - medical device incorporating AI
 
 Return only the intervention type, nothing else."""
             )
@@ -293,12 +323,9 @@ The definitions of the categories are as follows:
 patient-relevant outcomes = measurements of direct patient benefit. clinically meaningful endpoints such as symptoms, need for treatment, mortality, survival, surgical operation time, quality of life, changes in patient behaviour, outcome of an operation.
 operational outcomes = outcomes related to performance of the AI tool. For example, endpoints related to diagnostic yield, accuracy of the tool, user satisfaction with the tool or procedure.
 
-        
-The following is the description of the condition:
-<condition> {row.Condition} </condition>
-
-The following is the description of the primary outcome:
-<primary_outcome> {row.Primary_outcome} </primary_outcome>
+Scientific title: <scientific_title>{row.Scientific_title}</scientific_title>
+Condition: <condition>{row.Condition}</condition>
+Primary outcome: <primary_outcome>{row.Primary_outcome}</primary_outcome>
 
 Return only the primary outcome type, nothing else."""
             )
