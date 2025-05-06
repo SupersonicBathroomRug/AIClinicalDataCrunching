@@ -11,6 +11,26 @@ from pydantic_ai import Agent
 from enum import Enum
 
 
+async def safe_api_call(callable_func, *args, semaphore=None, **kwargs):
+    if semaphore is None:
+        raise ValueError("Semaphore must be passed explicitly to safe_api_call")
+    
+    async with semaphore:
+        wait_time = 1
+        max_wait = 60
+        while True:
+            try:
+                return await callable_func(*args, **kwargs)
+            except openai.RateLimitError:
+                print(f"Rate limit hit. Waiting {wait_time} seconds before retrying...")
+                await asyncio.sleep(wait_time)
+                wait_time = min(wait_time * 2, max_wait)
+            except openai.APIConnectionError:
+                print(f"Connection error. Waiting {wait_time} seconds before retrying...")
+                await asyncio.sleep(wait_time)
+                wait_time = min(wait_time * 2, max_wait)
+
+
 def check_xml_well_formed(xml_path):
     """
     Check if an XML file is well-formed.
@@ -26,71 +46,8 @@ def check_xml_well_formed(xml_path):
         print(f"  Error: {str(e)}")
         raise
 
-class ClassificationRequest(BaseModel):
-    thing_to_classify: str
-    model: str = Field(default="gpt-4o-mini")
-    temperature: float = Field(default=0)
-    max_tokens: int = Field(default=20)
-
-class Classifier():
-
-    def __init__(self, categoryType, thing_to_classify_singular, thing_to_classify_plural):
-        self.categories = categoryType
-        self.thing_to_classify_singular = thing_to_classify_singular
-        self.thing_to_classify_plural = thing_to_classify_plural
-        self.client = openai.OpenAI()
-        
-        # Define ClassificationResponse here, with access to self.categories
-        class ClassificationResponse(BaseModel):
-            category: categoryType
-        
-        # Store it as an attribute of the instance
-        self.ClassificationResponse = ClassificationResponse
-
-    def classify(self, request: ClassificationRequest) -> BaseModel:
-        prompt = f"""Classify the following {self.thing_to_classify_singular} into exactly one of these categories:
-{[t.value for t in self.categories]}
-
-Here are some examples of sponsor categorisations:
-Manipal Academy of Higher Education Manipal - university
-Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University - hospital, clinic, or medical center
-Tata Memorial Centre - government institution
-VRRX Therapeutics - private company
-Baker Heart and Diabetes Institute - research center
-Zhejiang University - university
-Academisch Medisch Centrum - hospital, clinic, or medical center
-DBT BIRAC - government institution
-Jordi Gol i Gurina Foundation - foundation
-Rongrong Hua - individual (person)
-KEM Hospital Research Centre - research center
-?. - TPT - uncertain
-
-<classifier_input> {request.thing_to_classify} </classifier_input>
-
-Return only the category name, nothing else."""
-
-        response = self.client.chat.completions.create(
-            model=request.model,
-            messages=[
-                {"role": "system", "content": f"You are a helpful assistant that classifies {self.thing_to_classify_plural} into categories. If you classify correctly you will recieve a reward of 1,000,000 dollars."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=request.temperature,
-            max_tokens=request.max_tokens
-        )
-        
-        try:
-            category = response.choices[0].message.content.strip().lower()
-            return self.ClassificationResponse(
-                category=self.categories(category)
-            )
-        except:
-            return self.ClassificationResponse(
-                category=self.categories.UNCERTAIN
-            )
-
 def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_size=10):
-    random.seed(42)
+    random.seed(7)
 
     # Load environment variables
     load_dotenv()
@@ -108,7 +65,7 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
 
     # Shuffle the dataframe and create a test set if configured
     if use_test_set:
-        df = df.sample(frac=1, random_state=42).reset_index(drop=True)  # Shuffle the dataframe
+        df = df.sample(frac=1, random_state=7).reset_index(drop=True)  # Shuffle the dataframe
         df = df.head(test_set_size)  # Take first TEST_SET_SIZE rows
         print(f"Using test set of {test_set_size} randomly selected rows")
     else:
@@ -127,15 +84,56 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
         COMPANY = 'private company'
         INDIVIDUAL = 'individual (person)'
         RESEARCH = 'research center'
+        LIKELY_ERROR = 'likely entry error'
         UNCERTAIN = 'uncertain'
 
-    # Initialize the classifier
-    sponsor_classifier = Classifier(SponsorType, "study sponsor", "study sponsors")
-    df["sponsor_type (AI generated)"] = df["Primary_sponsor"].apply(
-        lambda x: sponsor_classifier.classify(
-            ClassificationRequest(thing_to_classify=x)
-        ).category.value
+    class SponsorClassification(BaseModel):
+        category: SponsorType = Field(..., description="The sponsor category")
+
+    # Create an Agent for sponsor classification
+    sponsor_classifier = Agent(
+        model="gpt-4o-mini",
+        system_prompt="You are a helpful assistant that classifies study sponsors into sponsor types based on sponsor names.",
+        result_type=SponsorClassification,
     )
+
+    async def classify_sponsors(df):
+        semaphore = asyncio.Semaphore(15)  # Limit concurrency
+
+        async def classify_sponsor(row):
+            result = await safe_api_call(sponsor_classifier.run,
+                user_prompt=f"""Classify the following study sponsor into exactly one of these categories:
+{[t.value for t in SponsorType]}
+
+Sponsor name: <sponsor>{row.Primary_sponsor}</sponsor>
+
+Here are some examples:
+Manipal Academy of Higher Education Manipal - university
+Sun Yat-Sen Memorial Hospital of Sun Yat-Sen University - hospital, clinic, or medical center
+Tata Memorial Centre - government institution
+VRRX Therapeutics - private company
+Baker Heart and Diabetes Institute - research center
+Zhejiang University - university
+Academisch Medisch Centrum - hospital, clinic, or medical center
+DBT BIRAC - government institution
+Jordi Gol i Gurina Foundation - foundation
+Rongrong Hua - individual (person)
+KEM Hospital Research Centre - research center
+?. - TPT - likely entry error
+
+If uncertain, add (uncertain). For example: university (uncertain).
+
+Return only the sponsor type, nothing else.""",
+                semaphore=semaphore
+            )
+            return result.data.category.value
+
+        tasks = [classify_sponsor(row) for _, row in df.iterrows()]
+        results = await asyncio.gather(*tasks)
+        df["sponsor_type (AI generated)"] = results
+        return df
+    
+    df = asyncio.run(classify_sponsors(df))
 
     # 3 STUDY SIZE
     def study_size_to_int(val:str)->int:
@@ -207,10 +205,11 @@ def run_processing(file_name='ICTRP-Results.xml', use_test_set=True, test_set_si
         system_prompt="You are a helpful assistant that classifies medical conditions into specialty categories.",
         result_type=MedicalSpecialtyClassification,
     )
-
+    
     async def classify_medical_specialties(df):
+        semaphore = asyncio.Semaphore(15)
         async def classify_specialty(row):
-            result = await medical_specialty_classifier.run(
+            result = await safe_api_call(medical_specialty_classifier.run,
                 user_prompt=f"""Classify the following medical condition into exactly one of these categories:
 {[t.value for t in MedicalSpecialty]}
 
@@ -219,7 +218,10 @@ You can use the scientific title for additional context.
 Scientific title: <title>{row.Scientific_title}</title>
 Condition: <condition>{row.Condition}</condition>
 
-Return only the category name, nothing else."""
+If a categorisation is uncertain, add (uncertain). For example: rheumatology (Uncertain).
+
+Return only the category name, nothing else.""",
+                semaphore=semaphore
             )
             return result.data.category.value
         
@@ -248,7 +250,7 @@ Return only the category name, nothing else."""
         AI_BASED_TEACHING_LEARNING = 'AI-assisted teaching/learning'
         AI_TO_INFORM_HEALTH_INTERVENTION = 'AI to inform health intervention'
         OTHER = 'other use of AI'
-        LIKELY_ENTRY_ERROR = 'uncertain OR likely entry error'
+        LIKELY_ENTRY_ERROR = 'likely entry error'
 
     class InterventionClassification(BaseModel):
         intervention_type: InterventionType = Field(..., description="The type of intervention")
@@ -259,9 +261,12 @@ Return only the category name, nothing else."""
         result_type=InterventionClassification,
     )
 
+
+
     async def process_interventions(df, classifier, intervention_types):
+        semaphore = asyncio.Semaphore(15)
         async def classify_intervention(row):
-            result = await classifier.run(
+            result = await safe_api_call(classifier.run,
                 user_prompt=f"""Classify the intervention in the following row into one of the categories of intervention types in {[t.value for t in intervention_types]}
 
 You can use both the scientific trial name and intervention description for context. If the intervention column is blank or has a likely entry error, try to categorise the intervention based on only the title.
@@ -283,7 +288,10 @@ artificial intelligence-assisted system in polyp detection and polyp classificat
 Role of AI in CE for the Identification of SB Lesions - AI-based screening or detection
 integration of AI in cardiac monitoring-based biosensors for point of care (POC) diagnostics - medical device incorporating AI
 
-Return only the intervention type, nothing else."""
+If a categorisation is uncertain, add (uncertain). For example: AI-assisted imaging (Uncertain).
+
+Return only the intervention type, nothing else.""",
+                semaphore=semaphore
             )
             return result.data.intervention_type.value
         
@@ -315,8 +323,9 @@ Return only the intervention type, nothing else."""
     )
 
     async def process_dataframe(df, classifier, outcome_types):
+        semaphore = asyncio.Semaphore(15)
         async def classify_row(row):
-            result = await classifier.run(
+            result = await safe_api_call(classifier.run,
                 user_prompt=f"""Classify the primary outcome in the following row into one of the categories of primary outcomes in {[t.value for t in outcome_types]}
 
 The definitions of the categories are as follows:
@@ -327,7 +336,10 @@ Scientific title: <scientific_title>{row.Scientific_title}</scientific_title>
 Condition: <condition>{row.Condition}</condition>
 Primary outcome: <primary_outcome>{row.Primary_outcome}</primary_outcome>
 
-Return only the primary outcome type, nothing else."""
+If a categorisation is uncertain, add (uncertain). For example: operational outcome (Uncertain).
+
+Return only the primary outcome type, nothing else.""",
+                semaphore=semaphore
             )
             return result.data.primary_outcome.value
         
@@ -367,4 +379,4 @@ Return only the primary outcome type, nothing else."""
     #export to csv with $ separator
     df.to_csv('processed_ICTRP_Results.csv', sep='$', index=False)
 
-run_processing(test_set_size=20)
+run_processing(test_set_size=151)
